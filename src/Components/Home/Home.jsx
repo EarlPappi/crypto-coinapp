@@ -1,24 +1,18 @@
-import { useAuth } from "../../Context/AuthContext";
+import { Outlet } from 'react-router-dom';
+import Sidebar from '../Structures/SideBar/Sidebar';
+import classes from './Home.module.css'
 
 const Home = () => {
-
-    const { data, loading, error } = useAuth();
     return (
-        <div>
-            {loading && <h2>Data is Loading</h2>}
-           { data && data.map(data =>{
-               return (
-                   <div style={{
-                       padding: '2em',
-                       
-                   }}>
-                       <h2>{ data.title }</h2>
-                       <p>{ data.content }</p>
-                       <h4>Written By: { data.author }</h4>
-                   </div>
-               )
-           }) }
-            {error && <p>{ error }</p>}
+        <div className={classes.homeCon}>
+            <div className={ classes.sidebar }>
+                <Sidebar />
+            </div>
+
+            <div className={classes.outlet}>
+                <Outlet />
+            </div>
+
         </div>
     );
 }

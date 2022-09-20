@@ -1,0 +1,32 @@
+.sidebarCon{    
+    background-color: #0C0C0C;  
+    width: 20%;  
+    height: 100vh;
+    position: fixed;
+    padding: 2rem 0rem;
+}
+
+.sidebarNav{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    padding: 2rem 0rem
+}
+
+.sidebarNav a{
+    text-decoration: none;
+    display: block;
+    color: #868A8B;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.sidebarNav a:hover{
+    background-color: #226BD0;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}

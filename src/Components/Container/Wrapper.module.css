@@ -1,0 +1,10 @@
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media (min-width: 636px) {
+    .wrapper{
+        width: 80%;
+    }
+}

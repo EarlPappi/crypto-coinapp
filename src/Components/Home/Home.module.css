@@ -1,0 +1,17 @@
+.homeCon{
+    display: flex;
+    gap: 1em;
+    /* justify-content: space-between; */
+}
+
+.sidebar{
+    width: 20%;
+}
+
+.outlet{
+    /* width: 75%; */
+    flex: 1;
+    border: red 2px solid;
+    height: 100vh;
+    padding: 2rem 0rem;
+}
