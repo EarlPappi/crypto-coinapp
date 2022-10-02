@@ -5,7 +5,7 @@ import classes from './Home.module.css'
 const Home = () => {
     return (
         <div className={classes.homeCon}>
-            <div className={ classes.sidebar }>
+            <div className={ `${classes.sidebar}` }>
                 <Sidebar />
             </div>
 

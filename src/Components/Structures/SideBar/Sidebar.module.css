@@ -1,32 +1,82 @@
-.sidebarCon{    
-    background-color: #0C0C0C;  
-    width: 20%;  
-    height: 100vh;
-    position: fixed;
-    padding: 2rem 0rem;
+.desktop {
+    display: none;
 }
 
-.sidebarNav{
+@media (min-width:767px) {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+.sidebarCon {
+    background-color: #0C0C0C;
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: 0px;
+
+}
+
+@media (min-width: 767px) {
+    .sidebarCon {
+        background-color: #0C0C0C;
+        width: 25%;
+        height: 100vh;
+        position: fixed;
+        padding: 2rem 0rem;
+    }
+}
+
+
+
+
+
+.sidebarNav {
     display: flex;
     gap: 2rem;
-    flex-direction: column;
-    padding: 2rem 0rem
+    flex-direction: row;
 }
 
-.sidebarNav a{
+@media (min-width: 767px) {
+    .sidebarNav {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        padding: 2rem 0rem
+    }
+}
+
+.sidebarNav a {
     text-decoration: none;
     display: block;
     color: #868A8B;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem  0.5rem;
+
 }
 
-.sidebarNav a:hover{
+@media (min-width: 767px) {
+    .sidebarNav a {
+        font-size: 1.3rem;
+        padding: 1em;
+        gap: 1.5rem;
+        justify-content: flex-start;
+    }
+}
+
+
+
+/* .sidebarNav a:hover {
     background-color: #226BD0;
     color: white;
     font-weight: 600;
     border-radius: 5px;
-}
+} */

@@ -23,8 +23,6 @@ function App() {
             <Route path="contact-us" element={ <Contact/> }/>
           </Route>
         </Routes>
-
-        <Home />
       </div>
     </ContextProvider>
   );
