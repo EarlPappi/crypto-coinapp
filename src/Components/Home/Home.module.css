@@ -26,7 +26,6 @@
 
 .outlet {
     flex: 1;
-    border: red 2px solid;
     height: 100vh;
     overflow: scroll;
 }

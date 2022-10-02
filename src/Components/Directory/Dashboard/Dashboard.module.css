@@ -1,14 +1,19 @@
-.port1 {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 44%, rgba(0, 212, 255, 1) 100%);
+/* .port1 {
+    background: rgb(4,4,4);
+background: linear-gradient(90deg, rgba(4,4,4,1) 0%, rgba(0,0,0,0.9559174011401436) 42%, rgba(101,101,101,1) 100%);
+} */
+
+.port1{
+    border: 2px solid red;
 }
 
-.dashCon{
-    flex-direction: column;
+.portCon{
+    /* overflow-x: scroll; */
+    /* flex-direction: column; */
 }
 
 @media (min-width: 676px) {
-    .dashCon{
+    .portCon{
         flex-direction: row;
     }
 }

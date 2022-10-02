@@ -7,14 +7,40 @@ import { MdOutlineDashboardCustomize, MdOutlineContactSupport } from 'react-icon
 import { RiExchangeCnyFill } from 'react-icons/ri';
 import { IoBriefcaseOutline } from 'react-icons/io5';
 import { AiOutlineTeam } from 'react-icons/ai';
+import { useFetchData } from '../../../Hooks/useFetchData';
 
 const Sidebar = () => {
+    const options = {
+        method: 'GET',
+        url: 'https://coinranking1.p.rapidapi.com/coins',
+        params: {
+            referenceCurrencyUuid: 'yhjMzLPhuIDl',
+            timePeriod: '24h',
+            'tiers[0]': '1',
+            orderBy: 'marketCap',
+            orderDirection: 'desc',
+            limit: '50',
+            offset: '0'
+        },
+        headers: {
+            'X-RapidAPI-Key': '109458d1c1mshf326f104806cbc5p141f47jsn5024dc468d34',
+            'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
+        }
+    };
+
+
+
+    useFetchData(options);
+
+
+
+
     return (
-        <div className={`${classes.sidebarCon} w-1/3`}>
+        <div className={`${classes.sidebarCon}`}>
             <Wrapper>
                 <div className={ `${classes.desktop}` }>
                     <Link to='/'>
-                        <img src={Logo} alt="" className='w-2/3'/>
+                        <img src={Logo} alt="" className=''/>
                     
                     </Link>
                 </div>
