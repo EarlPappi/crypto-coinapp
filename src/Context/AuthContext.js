@@ -8,13 +8,13 @@ const userContext = createContext();
 export const ContextProvider = ({ children }) => {
     const BASE_URL = 'https://inshortsapi.vercel.app/news?category=science';
 
-    const {data:coinData, loading:coinLoading, erorr:cpoinError} = useFetch()
+    // const {data:coinData, loading:coinLoading, erorr:cpoinError} = useFetch()
     // const {data:coinData, loading:coinLoading, erorr:cpoinError} = useFetch()
 
 
 
 
-    const { data:techData, loading:techLoading, error:techError } = useFetch("https://inshortsapi.vercel.app/news?category=technology")
+    // const { data:techData, loading:techLoading, error:techError } = useFetch("https://inshortsapi.vercel.app/news?category=technology")
 
 
     // console.log(techData);
