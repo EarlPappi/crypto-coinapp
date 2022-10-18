@@ -7,6 +7,7 @@ import Statistics from "./Components/Directory/Statistics/Statistics";
 import Portfolio from "./Components/Directory/Portfolio/Portfolio";
 import Home from "./Components/Home/Home";
 import { ContextProvider } from "./Context/AuthContext";
+import CoinDetail from "./Components/Directory/Dashboard/CoinDetails/CoinDetail";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="portfolio" element={ <Portfolio/> }/>
             <Route path="about-us" element={ <About/> }/>
             <Route path="contact-us" element={ <Contact/> }/>
+            <Route path="statistics/:id" element={ <CoinDetail/> }/>
           </Route>
         </Routes>
       </div>

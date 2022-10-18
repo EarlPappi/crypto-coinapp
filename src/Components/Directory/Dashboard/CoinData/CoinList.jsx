@@ -7,6 +7,8 @@ function CoinList({ coinData }) {
             <h1>Starts Here</h1>
             {coinData ? <div>
                 {coinData.map((coin) => {
+
+                    
                     return (
                         <CoinItem coinData={coin} />
 
