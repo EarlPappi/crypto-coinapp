@@ -1,33 +1,24 @@
 import { createContext, useContext } from "react";
 import { useFetch } from "../Hooks/useFetch";
 
-const greet = "Hello Worrrrrrrld"
+// const greet = "Hello Worrrrrrrld";
 
 const userContext = createContext();
 
 export const ContextProvider = ({ children }) => {
-    const BASE_URL = 'https://inshortsapi.vercel.app/news?category=science';
-
-    // const {data:coinData, loading:coinLoading, erorr:cpoinError} = useFetch()
-    // const {data:coinData, loading:coinLoading, erorr:cpoinError} = useFetch()
-
-
-
-
-    // const { data:techData, loading:techLoading, error:techError } = useFetch("https://inshortsapi.vercel.app/news?category=technology")
-
-
-    // console.log(techData);
-
-    const { data, loading, error } = useFetch(BASE_URL);
+    const {data:coinData, loading:coinLoading, error:coinError} = useFetch('https://coingecko.p.rapidapi.com/coins/markets');
+    
+    
+    console.log("Coin Data: ", coinData)
+    console.log("Coin Loading: ", coinLoading)
+    console.log("Coin Error: ", coinError)
 
 
     return (
         <userContext.Provider value={{
-            greet,
-            data,
-            loading,
-            error
+            coinData,
+            coinError,
+            coinLoading
         }}>
             {children}
         </userContext.Provider>
