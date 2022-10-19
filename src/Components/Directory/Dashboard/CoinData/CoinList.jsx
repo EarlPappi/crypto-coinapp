@@ -4,17 +4,24 @@ import CoinItem from './CoinItem'
 function CoinList({ coinData }) {
     return (
         <div>
-            <h1>Starts Here</h1>
+            <div className='flex p-3 bg-gray-300'>
+                <span className='block w-1/12 font-bold text-center'>Icon</span>
+                <span className='block w-2/12 font-bold text-center'>Name</span>
+                <span className='block w-2/12 text-center font-bold'>Price(USD)</span>
+                <span className='block w-2/12 text-center font-bold'>Coin Mkt Cap</span>
+                <span className='block w-1/12 text-center font-bold'>24hr%</span>
+                <span className='block w-4/12 text-center font-bold'>Trading View</span>
+            </div>
             {coinData ? <div>
                 {coinData.map((coin) => {
 
-                    
+
                     return (
                         <CoinItem coinData={coin} />
 
                     )
                 })}
-            </div> : <h1>Chill, Coins Loading</h1>} 
+            </div> : <h1>Chill, Coins Loading</h1>}
         </div>
     )
 }

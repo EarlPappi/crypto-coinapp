@@ -33,7 +33,7 @@
 @media (min-width: 767px) {
     .outlet {
         flex: 1;
-        border: red 2px solid;
+        /* border: red 2px solid; */
         height: 100vh;
         padding: 2rem 0rem;
     }

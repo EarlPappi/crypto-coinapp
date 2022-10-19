@@ -21,7 +21,7 @@ const Dashboard = () => {
                         <div className={`${classes.port1} bg-slate-300 p-4 rounded-[1em]`}>
                             <p className='flex items-center gap-2 text-center'><SiBitcoin /> Bitcoin  </p>
                             <h1 className='text-center text-2xl font-bold'>
-                                10.0098392
+                                50.0098392
                             </h1>
                         </div>
 
