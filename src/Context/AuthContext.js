@@ -5,6 +5,14 @@ import { useFetch } from "../Hooks/useFetch";
 
 const userContext = createContext();
 
+const positive = (change) => {
+    if (change > 1) {
+        return true
+    } else {
+        return false
+    }
+};
+
 export const ContextProvider = ({ children }) => {
     const {data:coinData, loading:coinLoading, error:coinError} = useFetch('https://coingecko.p.rapidapi.com/coins/markets');
     
@@ -18,7 +26,8 @@ export const ContextProvider = ({ children }) => {
         <userContext.Provider value={{
             coinData,
             coinError,
-            coinLoading
+            coinLoading,
+            positive
         }}>
             {children}
         </userContext.Provider>
