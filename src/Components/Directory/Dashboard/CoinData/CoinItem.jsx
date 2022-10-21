@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import TradingViewWidget from 'react-tradingview-widget';
-import { useAuth } from '../../../../Context/AuthContext';
 
 function CoinItem({ coinData }) {
-    const { positive } = useAuth();
 
+    const positive = (change) => {
+        if (change > 1) {
+            return true
+        } else {
+            return false
+        }
+    };
 
 
     return (
@@ -63,4 +68,4 @@ function CoinItem({ coinData }) {
     )
 }
 
-export default CoinItem
+export default CoinItem;
