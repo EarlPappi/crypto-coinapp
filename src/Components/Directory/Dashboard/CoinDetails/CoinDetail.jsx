@@ -11,12 +11,13 @@ function CoinDetail({ coinData }) {
   const { data, loading, error } = useFetch(`https://coingecko.p.rapidapi.com/coins/${id}`);
 
   const positive = (change) => {
-    if (change > 1) {
-      return true
-    } else {
-      return false
+    if (change > 0) {
+        return true
+    } else if(change < 0){
+        return false
     }
-  };
+};
+
 
   console.log("Coin Details Data", data);
 

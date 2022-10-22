@@ -5,9 +5,9 @@ import TradingViewWidget from 'react-tradingview-widget';
 function CoinItem({ coinData }) {
 
     const positive = (change) => {
-        if (change > 1) {
+        if (change > 0) {
             return true
-        } else {
+        } else if(change < 0){
             return false
         }
     };
