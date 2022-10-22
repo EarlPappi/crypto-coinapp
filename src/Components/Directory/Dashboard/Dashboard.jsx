@@ -8,6 +8,8 @@ const Dashboard = () => {
     const { coinData, coinError, coinLoading } = useAuth();
 
     console.log("Dashboard Coin: ", coinData)
+    console.log("Coin Error: ", coinError)
+    console.log("Coin Loading: ", coinLoading)
 
 
     return (
