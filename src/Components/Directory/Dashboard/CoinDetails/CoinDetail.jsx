@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useFetch } from '../../../../Hooks/useFetch';
 import TradingViewWidget from 'react-tradingview-widget';
-import { useAuth } from '../../../../Context/AuthContext';
 
 
 
@@ -10,6 +9,7 @@ function CoinDetail({ coinData }) {
   const { id } = useParams();
   const { data, loading, error } = useFetch(`https://coingecko.p.rapidapi.com/coins/${id}`);
 
+  console.log(error)
   const positive = (change) => {
     if (change > 0) {
         return true
@@ -45,8 +45,8 @@ function CoinDetail({ coinData }) {
                 height="410px"
                 interval="30"
                 timezone="Etc/UTC"
+                // style="1"
                 theme="dark"
-                style="1"
                 locale="en"
                 toolbar_bg="#f1f3f6"
                 enable_publishing={false}
@@ -113,10 +113,9 @@ function CoinDetail({ coinData }) {
 
               <div className='w-full bg-slate-300 p-4 rounded-2xl'>
                 <h1>Description</h1>
-                <html>
-
+                <p>
                   {coinDetail?.description.en}
-                </html>
+                </p>
 
               </div>
 

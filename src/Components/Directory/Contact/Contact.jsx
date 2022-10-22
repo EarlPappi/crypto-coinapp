@@ -1,4 +1,3 @@
-import { FaChartLine } from 'react-icons/fa';
 
 const Contact = () => {
     return (
