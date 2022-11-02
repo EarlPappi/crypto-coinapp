@@ -2,7 +2,6 @@ import classes from './Sidebar.module.css';
 import Wrapper from '../../Container/Wrapper'
 import { Link } from 'react-router-dom';
 import Logo from '../../../Assets/earlLogo.png';
-import { FaChartLine } from 'react-icons/fa';
 import { MdOutlineDashboardCustomize, MdOutlineContactSupport } from 'react-icons/md';
 import { RiExchangeCnyFill } from 'react-icons/ri';
 import { IoBriefcaseOutline } from 'react-icons/io5';
@@ -30,7 +29,7 @@ const Sidebar = () => {
                         <span className={ `${classes.desktop}` }>Exchange</span>
                     </Link>
 
-                    <Link to='statistics'>
+                    <Link to='search'>
                         <span><AiOutlineFileSearch /></span>
                         <span className={ `${classes.desktop}` }>Search Coin</span>
                     </Link>
