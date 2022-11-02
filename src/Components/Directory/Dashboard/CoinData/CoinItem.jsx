@@ -31,11 +31,11 @@ function CoinItem({ coinData }) {
                     <span className='block w-full text-right'>${coinData.current_price.toLocaleString()}</span>
                 </div>
 
-                <div className='w-2/12'>
+                <div className='hidden md:block w-2/12'>
                     <span className='block w-full text-right'>${coinData.market_cap.toLocaleString()}</span>
                 </div>
 
-                <div className='w-1/12'>
+                <div className='hidden md:block w-1/12'>
                     <span className='block w-full text-right' style={{
                         color: positive(coinData.price_change_percentage_24h) ? 'green' : 'red'
                     }}>{coinData.price_change_percentage_24h.toFixed(3)}</span>

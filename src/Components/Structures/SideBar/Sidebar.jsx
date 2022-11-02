@@ -6,7 +6,7 @@ import { FaChartLine } from 'react-icons/fa';
 import { MdOutlineDashboardCustomize, MdOutlineContactSupport } from 'react-icons/md';
 import { RiExchangeCnyFill } from 'react-icons/ri';
 import { IoBriefcaseOutline } from 'react-icons/io5';
-import { AiOutlineTeam } from 'react-icons/ai';
+import { AiOutlineTeam, AiOutlineFileSearch } from 'react-icons/ai';
 
 const Sidebar = () => {
     
@@ -31,8 +31,8 @@ const Sidebar = () => {
                     </Link>
 
                     <Link to='statistics'>
-                        <span><FaChartLine /></span>
-                        <span className={ `${classes.desktop}` }>Statistics</span>
+                        <span><AiOutlineFileSearch /></span>
+                        <span className={ `${classes.desktop}` }>Search Coin</span>
                     </Link>
 
                     <Link to='portfolio'>

@@ -55,7 +55,7 @@ export function useFetch(url) {
             .catch((e) => {
                 dispatch({ type: ACTIONS.ERROR, payload: e.error })
             })
-    }, []);
+    }, [url]);
 
 
     return state;
