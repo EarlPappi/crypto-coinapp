@@ -15,11 +15,7 @@ const positive = (change) => {
 
 export const ContextProvider = ({ children }) => {
     const {data:coinData, loading:coinLoading, error:coinError} = useFetch('https://coingecko.p.rapidapi.com/coins/markets');
-    
-    
-    console.log("Coin Data: ", coinData)
-    console.log("Coin Loading: ", coinLoading)
-    console.log("Coin Error: ", coinError)
+
 
 
     return (

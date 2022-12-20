@@ -2,7 +2,7 @@
     display: none;
 }
 
-@media (min-width:767px) {
+@media (min-width:769px) {
     .desktop {
         display: block;
     }
@@ -21,7 +21,7 @@
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
     .sidebarCon {
         background-color: #0C0C0C;
         width: 25%;
@@ -41,7 +41,7 @@
     flex-direction: row;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
     .sidebarNav {
         display: flex;
         gap: 2rem;
@@ -63,7 +63,7 @@
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
     .sidebarNav a {
         font-size: 1.3rem;
         padding: 1em;
